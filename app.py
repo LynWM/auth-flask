@@ -5,10 +5,10 @@ from flask_jwt_extended import (
     jwt_required,
 )
 from flask_restful import Resource
-from models import Note, User
 from sqlalchemy.exc import IntegrityError
 
 from config import api, app, db
+from models import Note, User
 
 
 def current_user():
